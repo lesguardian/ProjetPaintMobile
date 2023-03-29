@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutPrincipal"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -101,18 +102,18 @@
             android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageEllipse"
+            android:id="@+id/buttonRectanglePlein"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/carre_plein"
             android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageDroite"
+            android:id="@+id/buttonEllipsePlein"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/cercle_plein"
-            android:onClick="setForme"/>
+            android:onClick="setForme" />
 
         <ImageButton
             android:id="@+id/buttonEllipse"

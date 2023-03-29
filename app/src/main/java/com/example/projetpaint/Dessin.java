@@ -2,6 +2,7 @@ package com.example.projetpaint;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +14,7 @@ public class Dessin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dessin);
+        ((LinearLayout)findViewById(R.id.LayoutPrincipal)).addView(new ZoneDessin(this));
     }
 
     public void Quit(View view){
@@ -53,8 +55,17 @@ public class Dessin extends AppCompatActivity {
             case R.id.buttonDroite:
                 forme = new Droite();
                 break;
+            case R.id.buttonRectanglePlein:
+                forme = new Ellipse();
+                break;
+            case R.id.buttonEllipsePlein:
+                forme = new Ellipse();
+                break;
 
         }
         return forme;
     }
+
+
+
 }
