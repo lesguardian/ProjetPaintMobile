@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Intent NewDessin = new Intent(this, Dessin.class);
         startActivity(NewDessin);
     }
+
+    public void Quit(View view){
+        finish();
+    }
 }

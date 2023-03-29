@@ -13,12 +13,13 @@
     android:gravity="center">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Quitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quitter"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="2dp" />
+        tools:layout_editor_absoluteY="2dp"
+        android:onClick="Quit"/>
 
     <Button
         android:id="@+id/button4"
@@ -40,81 +41,92 @@
 
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonRed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF0000"
         android:text=""
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="selectColor"/>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:text=""
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="selectColor"/>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/buttonYellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFD700"
         android:text=""
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="selectColor"/>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#0000FF"
         android:text=""
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="selectColor"/>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FF00"
         android:text=""
-        tools:ignore="MissingConstraints" />
+        style="?android:attr/buttonBarButtonStyle"
+        android:onClick="selectColor"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        >
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/buttonRectangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/carr_" />
+            app:srcCompat="@drawable/carr_"
+            android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/imageEllipse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/carre_plein" />
+            app:srcCompat="@drawable/carre_plein"
+            android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/imageDroite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/cercle_plein" />
+            app:srcCompat="@drawable/cercle_plein"
+            android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonEllipse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/cercle" />
+            app:srcCompat="@drawable/cercle"
+            android:onClick="setForme"/>
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/buttonDroite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ligne" />
+            app:srcCompat="@drawable/ligne"
+            android:onClick="setForme"/>
 
         <ImageButton
             android:id="@+id/imageButton6"

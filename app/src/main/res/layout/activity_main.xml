@@ -29,14 +29,15 @@
         android:onClick="NewDessin" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Quitter"
         android:layout_width="409dp"
         android:layout_height="46dp"
         android:text="Quitter"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="Quit"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/RependreDessin"
         android:layout_width="409dp"
         android:layout_height="46dp"
         android:text="Reprendre Dessin"
